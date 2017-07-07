@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import NotFounded from '@/pages/NotFounded'
+import NotFounded from '@/pages/404'
 import Home from '@/pages/Home'
 import TestPage from '@/pages/TestPage'
 Vue.use(Router)
