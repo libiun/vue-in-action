@@ -5,13 +5,13 @@
       <h5 class="text-center">Filter by Category</h5>
       <form>
         <div class="row">
-          <div class="large-6 columns">
-            <select v-model="section">
-              <option v-for="section in sections" :value="section">{{ section }}</option>
+          <div class="col-md-6">
+            <select v-model="section" class="form-control">
+              <option v-for="(section,key) in sections" :value="section" :key="key">{{ key +' :' + section }}</option>
             </select>
           </div>
-          <div class="medium-6 columns">
-            <a @click="getPosts(section)" class="button expanded">Retrieve</a>
+          <div class="col-md-6">
+            <a @click="getPosts(section)" class="btn btn-primary btn-block">Retrieve</a>
           </div>
         </div>
       </form>
